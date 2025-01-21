@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "multivariate methods for text"
+version = "0.1.0"
+description = "Code accompanying the lecture multivariate analysis for texts as part of Multivariate Verfahren (WS 2024/25)"
+authors = ["Jonas Rieger <jonas.rieger@analytical-software.de>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.41.1"
+python-dotenv = "^1.0.1"
+openai = "^1.58.1"
+scikit-learn = "^1.6.1"
+pandas = "^2.2.3"
+pydantic = "^2.10.5"
+pytest = "^8.3.4"
+ipython = "^8.31.0"
+ipykernel = "^6.29.5"
+plotly = "^5.24.1"
+nbformat = "^5.10.4"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.1"
+mypy = "^1.14.1"
+
+[tool.poetry.requires-plugins]
+poetry-plugin-export = ">=1.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
